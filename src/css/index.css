@@ -284,9 +284,19 @@ section.media, section.client, section.bio, section.video, section.branding, sec
     margin: 1rem 0;
 }
 
+.contact__wrapper {
+    margin: 2rem 0;
+    display: flex;
+    gap: 4rem;
+}
+
+.contact__wrapper > img {
+    max-width: 22rem;
+}
+
 .contact__form {
-    margin: 2rem auto;
     box-shadow: 0 0.5rem 1rem #eee;
+    width: 100%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
