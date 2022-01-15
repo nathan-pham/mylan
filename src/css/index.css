@@ -1,0 +1,60 @@
+#app {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.navigation, .navigation > div {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-body);
+}
+
+.navigation {
+    justify-content: space-between;
+}
+
+.navigation__logo {
+    margin: 0 3rem 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation__logo h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.navigation__logo img {
+    height: 4rem;
+    margin: 0 1rem 0 0;
+}
+
+.navigation__logo span {
+    color: var(--primary);
+}
+
+.navigation__links a {
+    margin: 0 0 0 2rem;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.navigation__quote {
+    text-transform: uppercase;
+}
+/*
+        <nav class="navigation">
+            <div>
+                <img class="navigation__logo" src="/src/assets/logo.svg" />
+                <div class="navigation__links">
+                    <a href="#">Home</a>
+                    <a href="#">Press</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+
+            <a class="navigation__quote">Get Quote</a>
+        </nav>*/
