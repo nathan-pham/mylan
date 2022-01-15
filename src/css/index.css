@@ -1,6 +1,9 @@
 #app {
     max-width: 60rem;
     margin: 0 auto;
+}
+
+.navigation {
     padding: 2rem 0;
 }
 
@@ -40,21 +43,276 @@
     margin: 0 0 0 2rem;
     text-decoration: none;
     color: var(--secondary);
+    transition: color 0.2s ease;
+}
+
+.navigation__links a:hover {
+    color: #000;
 }
 
 .navigation__quote {
     text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
-/*
-        <nav class="navigation">
-            <div>
-                <img class="navigation__logo" src="/src/assets/logo.svg" />
-                <div class="navigation__links">
-                    <a href="#">Home</a>
-                    <a href="#">Press</a>
-                    <a href="#">Contact</a>
-                </div>
-            </div>
 
-            <a class="navigation__quote">Get Quote</a>
-        </nav>*/
+.navigation__quote::before {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: width 0.2s ease;
+}
+
+.navigation__quote:hover::before {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__text, .hero__video {
+    flex: 0 0 50%;
+    padding: 2rem 0;
+}
+
+.hero__title {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.hero__subtitle {
+    margin: 1.25rem 0 0 0;
+    font-size: 1.25rem;
+    color: var(--secondary);
+    font-family: var(--font-body);
+}
+
+.hero__video {
+    text-align: right;
+}
+
+.hero__video img {
+    max-width: 22rem;
+}
+
+.hero__buttons {
+    margin: 2.5rem 0 0 0;
+    display: flex;
+    gap: 1rem;
+}
+
+button.primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+button.secondary {
+    background: none;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+section.media, section.client, section.bio, section.video, section.branding, section.contact {
+    margin: 4rem 0 0 0;
+}
+
+.media__title, .client__title, .branding__title, .contact__title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: var(--font-display);
+}
+
+.media__grid {
+    margin: 1.5rem 0 0 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    height: 12rem;
+}
+
+.media__grid > div {
+    display: grid;
+    place-items: center;
+    color: #fff;    
+    cursor: pointer;
+}
+
+.media__grid img {
+    mix-blend-mode: difference;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.media__grid > div:hover img {
+    opacity: 1;    
+}
+
+.footer {
+    margin: 3rem 0 0 0;
+    border-top: 1px solid var(--secondary);
+    padding: 2rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-body);
+}
+
+.footer a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer a svg {
+    color: var(--primary);
+}
+
+.client__container {
+    position: relative;
+}
+
+.client__card {
+    box-shadow: 0 0.5rem 1rem #eee;
+    padding: 2rem;
+    margin: 1.5rem 0 0 0;
+    font-family: var(--font-body);
+}
+
+.client__card__description {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.client__card__title {
+    margin: 1.5rem 0 0 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.client__card__subtitle {
+    color: var(--secondary);
+    margin: 0;
+}
+
+.client__left, .client__right {
+    --offset: -2.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 10rem;
+    border: 1px solid var(--secondary);
+    display: grid;
+    place-items: center;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem #eee;
+}
+
+.client__left {
+    left: var(--offset);
+}
+
+.client__right {
+    right: var(--offset);
+}
+
+.bio {
+    font-size: 3rem;
+    font-family: var(--font-display);
+    line-height: 1.125;
+    font-weight: 600;
+}
+
+.bio span {
+    color: var(--primary);
+}
+
+.video__container {
+    height: 30rem;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.video__container__play {
+    background: #fff;
+    height: 5rem;
+    width: 5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 10rem;
+    box-shadow: 0 0 0 2.5rem rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video__container:hover .video__container__play {
+    transform: scale(1.2);
+}
+
+.video__container__text {
+    font-family: var(--font-body);
+    color: #fff;
+    transform: translateY(3rem);
+}
+
+.branding__text {
+    color: var(--secondary);
+    font-size: 1.125rem;
+    font-family: var(--font-body);
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+.contact__form {
+    margin: 2rem auto;
+    box-shadow: 0 0.5rem 1rem #eee;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form input {
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--secondary);
+    outline: none;
+    margin: 0 0 1rem 0;
+    font-size: 100%;
+    transition: border 0.2s ease;
+}
+
+.contact__form textarea {
+    margin: 0 0 1rem 0;
+    outline: none;
+    resize: vertical;
+    min-height: 20rem;
+    transition: border 0.2s ease;
+}
+
+.contact__form input:focus, .contact__form textarea:focus {
+    border: 1px solid var(--primary);
+}
+
+.contact__form button.primary {
+    align-self: flex-end;
+}

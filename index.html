@@ -8,32 +8,108 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navigation">
+        <header class="navigation">
             <div>
                 <div class="navigation__logo">
                     <img src="/src/assets/logo.svg" />
-                    <h1>Motivated<br /><span>Mylan</span></h1>
+                    <h1>Motivated<br />by <span>Mylan</span></h1>
                 </div>
-                <div class="navigation__links">
+                <nav class="navigation__links">
                     <a href="#">Home</a>
                     <a href="#">Press</a>
                     <a href="#">Contact</a>
+                </nav>
+            </div>
+
+            <a class="navigation__quote">Get Quote</a>
+        </header>
+        <section class="hero">
+            <div class="hero__text">
+                <h1 class="hero__title">A True Inspirational Speaker</h1>
+                <p class="hero__subtitle">Hi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit est laudantium modi?</p>
+
+                <div class="hero__buttons">
+                    <button class="primary">Let's Talk <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.20307 1.04312C1.00481 0.954998 0.77234 1.0048 0.627577 1.16641C0.482813 1.32802 0.458794 1.56455 0.568116 1.75196L3.92115 7.50002L0.568116 13.2481C0.458794 13.4355 0.482813 13.672 0.627577 13.8336C0.77234 13.9952 1.00481 14.045 1.20307 13.9569L14.7031 7.95692C14.8836 7.87667 15 7.69761 15 7.50002C15 7.30242 14.8836 7.12336 14.7031 7.04311L1.20307 1.04312ZM4.84552 7.10002L2.21234 2.586L13.2689 7.50002L2.21234 12.414L4.84552 7.90002H9C9.22091 7.90002 9.4 7.72094 9.4 7.50002C9.4 7.27911 9.22091 7.10002 9 7.10002H4.84552Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button>
+                    <button class="secondary">Portfolio <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button>
                 </div>
             </div>
-
-            <a class="navigation__quote">Get Quote</a>
-        </nav>
-        <!-- <nav class="navigation">
-            <div class="navigation__links">
-                <img class="navigation__image" src="/src/assets/logo.svg" />
-                <h1 class="navigation__logo">Motivated<br /><span>By Mylan</span></h1>
-                <a class="navigation__link active">Home</a>
-                <a class="navigation__link">Press</a>
-                <a class="navigation__link">Contact</a>
+            <div class="hero__video">
+                <img src="/src/assets/undraw_conference.svg" />
             </div>
+        </section>
+        
+        <section class="client">
+            <h2 class="client__title">Clients</h2>
 
-            <a class="navigation__quote">Get Quote</a>
-        </nav> -->
+            <div class="client__container">
+                <div class="client__card">
+                    <p class="client__card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eaque atque, non iste est temporibus minus magni consectetur inventore.</p>
+
+                    <h1 class="client__card__title">John Doe</h1>
+                    <p class="client__card__subtitle">Project Manager</p>
+                </div>
+
+                <div class="client__left">
+                    <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.84182 3.13514C9.04327 3.32401 9.05348 3.64042 8.86462 3.84188L5.43521 7.49991L8.86462 11.1579C9.05348 11.3594 9.04327 11.6758 8.84182 11.8647C8.64036 12.0535 8.32394 12.0433 8.13508 11.8419L4.38508 7.84188C4.20477 7.64955 4.20477 7.35027 4.38508 7.15794L8.13508 3.15794C8.32394 2.95648 8.64036 2.94628 8.84182 3.13514Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </div>
+                <div class="client__right">
+                    <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <div class="video__container">
+                <div class="video__container__play">
+                    <svg width="32" height="32" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.24182 2.32181C3.3919 2.23132 3.5784 2.22601 3.73338 2.30781L12.7334 7.05781C12.8974 7.14436 13 7.31457 13 7.5C13 7.68543 12.8974 7.85564 12.7334 7.94219L3.73338 12.6922C3.5784 12.774 3.3919 12.7687 3.24182 12.6782C3.09175 12.5877 3 12.4252 3 12.25V2.75C3 2.57476 3.09175 2.4123 3.24182 2.32181ZM4 3.57925V11.4207L11.4288 7.5L4 3.57925Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </div>
+                <p class="video__container__text">Watch Mylan!</p>
+            </div>
+        </section>
+        
+        <section class="bio">
+            Lorem <span>20</span> ipsum dolor sit, amet consectetur adipisicing elit. Impedit consequuntur iusto, fugit nesciunt, esse aspernatur <span>mollitia quibusdam</span>.
+        </section>
+        <section class="branding">
+            <h2 class="branding__title">Speeches That Inspire</h2>
+            <div class="branding__text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis facere recusandae cupiditate maxime. Rem doloribus, ut sapiente accusantium hic earum harum ullam. Repellat facere provident totam consequuntur possimus ratione reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam blanditiis deleniti sed eum quas doloribus enim qui ipsum iure minima magni, architecto laudantium mollitia, ad, accusamus repudiandae? Excepturi, corporis a!</p>
+
+                <ul>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Quae obcaecati fugiat, optio, explicabo</li>
+                    <li>Fugiat, ad itaque. Reprehenderit, architecto facilis.</li>
+                </ul>
+            </div>
+            <button class="primary">See our Programs <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.20307 1.04312C1.00481 0.954998 0.77234 1.0048 0.627577 1.16641C0.482813 1.32802 0.458794 1.56455 0.568116 1.75196L3.92115 7.50002L0.568116 13.2481C0.458794 13.4355 0.482813 13.672 0.627577 13.8336C0.77234 13.9952 1.00481 14.045 1.20307 13.9569L14.7031 7.95692C14.8836 7.87667 15 7.69761 15 7.50002C15 7.30242 14.8836 7.12336 14.7031 7.04311L1.20307 1.04312ZM4.84552 7.10002L2.21234 2.586L13.2689 7.50002L2.21234 12.414L4.84552 7.90002H9C9.22091 7.90002 9.4 7.72094 9.4 7.50002C9.4 7.27911 9.22091 7.10002 9 7.10002H4.84552Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button>
+        </section>
+        
+        <section class="media">
+            <h2 class="media__title">@motivated_mylan</h2>
+
+            <div class="media__grid">
+                <div style="background-image: url(https://images.pexels.com/photos/1708936/pexels-photo-1708936.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=300)"><img src="/src/assets/instagram.svg" /></div>
+                <div style="background-image: url(https://images.pexels.com/photos/373632/pexels-photo-373632.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=300)"><img src="/src/assets/instagram.svg" /></div>
+                <div style="background-image: url(https://images.pexels.com/photos/159472/headphones-instagram-video-games-razer-159472.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=300)"><img src="/src/assets/instagram.svg" /></div>
+                <div style="background-image: url(https://images.pexels.com/photos/1394506/pexels-photo-1394506.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=300)"><img src="/src/assets/instagram.svg" /></div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2 class="contact__title">Say Hello!</h2>
+
+            <form class="contact__form">
+                <input name="name" placeholder="Name" />
+                <input name="email" placeholder="Email" type="email" />
+                <textarea></textarea>
+                <button class="primary">Submit</button>
+            </form>
+        </section>
+        <footer class="footer">
+            <span>© 2022 All Rights Reserved</span>
+            <a href="#">
+                <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 2C0.447715 2 0 2.44772 0 3V12C0 12.5523 0.447715 13 1 13H14C14.5523 13 15 12.5523 15 12V3C15 2.44772 14.5523 2 14 2H1ZM1 3L14 3V3.92494C13.9174 3.92486 13.8338 3.94751 13.7589 3.99505L7.5 7.96703L1.24112 3.99505C1.16621 3.94751 1.0826 3.92486 1 3.92494V3ZM1 4.90797V12H14V4.90797L7.74112 8.87995C7.59394 8.97335 7.40606 8.97335 7.25888 8.87995L1 4.90797Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                client.mylan@gmail.com
+            </a>
+        </footer>
     </div>
     <script type="module" src="/src/js/app.js"></script>
 </body>

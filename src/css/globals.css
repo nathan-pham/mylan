@@ -16,8 +16,29 @@ html, body {
     margin: 0;
     box-sizing: border-box;
     background: #fff;
+    overflow-x: hidden;
 }
 
 *, ::before, ::after {
     box-sizing: inherit;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.75rem;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background: var(--primary);
 }
