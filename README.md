@@ -1,9 +1,7 @@
-I would just need a home page, bio, press, contact and for all i care they can all be on the same page.
+![project banner](https://project-banner.phamn23.repl.co/?title=Mylan&description=A%20commissioned%20website%20for%20a%20motivational%20speaker...&stack=html,css,js)
 
-It's for my sister in law's husband, Mylan, who is trying to be a motivational speaker. He wants something simple, modern, and has vibes - have fun with it, think fun. think basketball. think shoes. black and vibrant colors. think sports. think what you would think would make it look best? He's an amazing African-American man who loves shoe culture, sports, fashion, innovation, and creativity.
+# Mylan
+A commissioned website for a motivational speaker except they never got back to me...
 
-If you are able to finish this project I will have roughly 20-25 more for you that pay way better, we are just trying to see how hard you'd want to work to make more and be apart of our go -to team.
-
-If you could show us an idea of what you do based off of this (included logo) that would be extra points and we are always happy to TIP!!!
-
-If you don't want to take the time to build a simple template then maybe just show us where u might put things or just tell us via email.
+## Screenshots
+![full website](./screencapture-localhost-3000-2022-01-15-03_25_24.png)
